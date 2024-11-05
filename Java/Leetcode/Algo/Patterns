@@ -1,0 +1,103 @@
+|||||||||||||||||||||||||||  ARRAYS: |||||||||||||||||||||||||||||||||||||||||||||||||
+
+    * Traversing through an array is at least once generally, and this would have the use of another array or DS and check if
+    * some condition follows through
+
+    * The use of other DS can be very useful to find quick and also brute force solutions such as a stack for an array problem
+
+    * Some Array problems may be in a form of the sorting algorithm. The time complexity: O(n logn) Space Complexity : O(1)
+
+
+|||||||||||||||||||||||||||  Binary Search: |||||||||||||||||||||||||||||||||||||||||||||||||
+
+
+    * Involves the the array/list to be sorted.
+    ** HAS TO BE SORTED
+    * Once sorted, you can implement the divide and conquer method
+    * always runs in O(log n) time complexity
+
+|||||||||||||||||||||||||||  Dynamic Programming: ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+    **Tabulation, also known as the bottom-up approach, involves building a table to store the solutions to subproblems
+    and iteratively filling in the table in a bottom-up fashion until we reach the solution to the original problem.
+    This approach is typically used when the subproblems can be represented as a one-dimensional or multi-dimensional
+    array or matrix.
+
+    *For example, in the Fibonacci sequence problem, we can use tabulation to store the solutions to each subproblem in
+    a one-dimensional array, starting with the base cases and computing each subsequent term until we reach the solution
+    to the original problem.
+
+    **Memoization, also known as the top-down approach, involves recursively solving subproblems and storing the solutions
+    to each subproblem in a table or memo. When a subproblem is encountered again, we can retrieve its previously computed solution
+    from the table or memo, rather than recomputing it. This approach is typically used when the subproblems can be represented
+    as a tree or graph.
+
+    *For example, in the Fibonacci sequence problem, we can use memoization to recursively compute the value of each term
+    in the sequence, storing the solutions to each subproblem in a memo. When a subproblem is encountered again, we can retrieve
+    its previously computed solution from the memo rather than recomputing it.
+
+|||||||||||||||||||||||||||  Greedy: ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+
+    *the algorithm makes the best possible choice at each step without considering the future consequences,
+    hoping that this will lead to an optimal solution.
+    Greedy algorithms are often easy to understand, efficient, and provide good approximate solutions to many problems.
+
+
+
+|||||||||||||||||||||||||||  Heaps: |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+    * We have max/min heaps. Generally the children nodes will never be greater than the parent node for a max heap, and
+    vice versa for a small heap where the children will never be smaller than the parent node.
+    * Make sure to understand how a heap works and how to heapify to achieve both min and max heaps.
+
+|||||||||||||||||||||||||||  Math & Geometry: |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+    *These questions require a sense of mathematical background of some degree in order to solve a specific problem,
+    optimally.
+
+
+
+|||||||||||||||||||||||||||  Stack: ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+    *The stack problems usually need to find a certain value within the end or start and require to traverse through the list
+    *and then maybe pop
+    **Generally runs in O(n) time complexity
+
+|||||||||||||||||||||||||||  Sliding Window: |||||||||||||||||||||||||||||||||||||||||||||||||
+
+    * The idea of the sliding window is to go through the structure, usually an array once.
+    * The idea is to avoid multiple traverses
+
+    ****** The idea is to traverse through a structure with a fixed window size to get some solution of some sort based on
+    a condition that the question may ask. Example: Find max number within a fixed window size of 4 in an array that contains a size greater than
+    or equal to that of the fixed window size that you need to check for. Never less than.
+
+    * a sliding window is a technique used to analyze a sequence of data, such as an array or a string.
+     It involves maintaining a window of a fixed size, and moving the window along the sequence, one step at a time,
+     in order to perform some operation on the elements within the window. For example, a sliding window algorithm
+     might be used to find the maximum or minimum element within a given window of an array, or to count the number
+     of occurrences of a specific substring within a larger string.
+
+|||||||||||||||||||||||||||  Two Pointers: |||||||||||||||||||||||||||||||||||||||||||||||||||
+
+    * With two pointers, you generally would use a left and right pointer (not always though)
+    * The start would be in the beginning of the structure, usually an array, and the end would be at the end of the array.
+
+
+|||||||||||||||||||||||||||  Linked List: |||||||||||||||||||||||||||||||||||||||||||||||||||
+
+    *Linked list generally contains questions of traversing and maybe using other data struct/algo to find a solution to a
+    particular problem.
+    *Most LL problems just deal with manipulating references of said LL.
+    *Alot of problems can be figured out in O(1) Space.
+
+
+|||||||||||||||||||||||||||  Trees: |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+    * Tree problems are generally dependent, since there are various trees such as AVL,  red-black, BST, max heap, min heap.
+    *BST trees can be solved in O(log n) time, and thats due to the nature of the trees.
+    * Most tress problems can be solved using DFS, and BFS. they can be done iteratively as well but that can sometimes be more complex.
+
+
+

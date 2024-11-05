@@ -1,0 +1,29 @@
+Graphs are trees with no roots.
+There are ways to represent them, either using a matrix or a linked list.
+Graphs represent relationship or connections between neighbors.
+There are the vertices/nodes and the edges.
+Graphs can be weighted or non weighted and they can also be directed and undirected.
+
+1.Dijkstra's Algorithm:
+Dijkstra's algorithm is used to find the shortest path between a source vertex and all other
+vertices in a weighted graph with non-negative edge weights. It works efficiently for finding the shortest path in graphs without negative weight cycles.
+The Time Complexity is usually  O((V + E) log V)
+
+2. Bellman-Ford Algorithm:
+Bellman-Ford algorithm is used to find the shortest path between a source vertex and all
+other vertices in a weighted graph, even when there are negative edge weights. It can handle graphs
+with negative weight cycles but is less efficient than Dijkstra's algorithm.
+
+3. Prim's Algorithm:
+Prim's algorithm is used to find the minimum spanning tree of a connected, undirected, and weighted graph. It starts with
+an arbitrary vertex and adds the edge with the smallest weight that connects a vertex in the tree to a vertex outside the tree.
+
+4. Kruskal's Algorithm:
+Kruskal's algorithm is another approach to finding the minimum spanning tree of a connected, undirected,
+and weighted graph. It starts with an empty set of edges and gradually adds the edge with the smallest weight that
+does not form a cycle with the existing edges.
+
+5. Topological Sorting:
+   Topological sorting is used to order the vertices of a directed acyclic graph (DAG) in such a way that for every
+   directed edge from vertex u to vertex v, u comes before v in the ordering. It is commonly used in scheduling and
+   dependency resolution problems.

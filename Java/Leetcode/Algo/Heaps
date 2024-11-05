@@ -1,0 +1,30 @@
+In Heaps we have both min heaps and max heaps.
+
+Min heaps are when the parent node value is always less than its childrens node values.
+Max heaps are when the parent node value is always greater than its childrens node values.
+
+**********
+The time complexity of the basic operations in a min heap and max heap can be summarized as follows:
+
+    Insertion (Heapify-Up): O(log n)
+    When inserting a new element into a heap, it is placed at the next available position and then "bubbled up" (or "heapify-up") to
+    its correct position by repeatedly comparing it with its parent and swapping if necessary. The number of comparisons and swaps required
+    is proportional to the height of the heap, which is logarithmic to the number of elements (n).
+
+    Deletion (Heapify-Down): O(log n)
+    When deleting the root element (minimum in a min heap or maximum in a max heap), the last element in the heap is moved to the root position,
+    and then "bubbled down" (or "heapify-down") to its correct position by comparing it with its children and swapping if necessary. Similar to
+    insertion, the number of comparisons and swaps required is proportional to the height of the heap, which is logarithmic to the number of elements (n).
+
+    Accessing the Minimum/Maximum: O(1)
+    Both min heaps and max heaps provide constant-time access to the minimum or maximum element respectively,
+    as they are always located at the root of the heap.
+
+    Building a Heap: O(n)
+    Building a heap from an array of n elements can be done in linear time. This operation is also known as
+    "heapify" and involves repeatedly applying heapify-down operations on non-leaf elements, starting from the last non-leaf
+    element and moving up to the root.
+
+Overall, the time complexity of most heap operations is logarithmic (O(log n)), except for building
+a heap which has a linear time complexity (O(n)).
+***********

@@ -1,0 +1,84 @@
+#Height and depth are two important measures of trees in computer science, and they are often used to evaluate the efficiency of
+different tree-based algorithms. Here are the main differences between height and depth of trees:
+
+Height: The height of a tree is the maximum number of edges from the root node to any leaf node in the tree.
+In other words, it measures the distance from the root to the furthest leaf node. The height of a tree is typically measured in
+terms of the number of edges, not the number of nodes.
+
+Depth: The depth of a node in a tree is the number of edges from the root node to that node. In other words, it measures the
+distance from the root to a specific node. The depth of the root node is 0.
+
+ The main differences between height and depth can be summarized as follows:
+
+  Height is a measure of the overall size of a tree, while depth is a measure of the distance from a specific node to the root node.
+  The height of a tree is always greater than or equal to its depth.
+  The height of a tree is an important factor in determining the time complexity of tree-based algorithms, while the depth of a node
+  is important for traversal algorithms such as depth-first search.
+
+Understanding the differences between height and depth is important for designing and analyzing tree-based algorithms,
+and for evaluating the efficiency of different tree-based data structures.
+
+
+###################################################################################################################################
+
+1. Tree Traversals: There are three ways to traverse a tree, they are: Pre-Order RootLR, In-Order LRootR, Post-Order LRRoot. They provide an order
+in which values/items are outputted through a traversal. They can be traversed through recursion.
+
+2.DFS- Depth First search uses recursion to find a particular value or traverse through a tree in a specific order.
+it alwways start wwith the root node.
+
+3.BFS - Breath First Search is similar to DFS except that it doesnt use recursion but rather traverses iteratively using
+a queue. It also start with the root node.
+
+4. Union-Find - this is also know as Disjoint set data structure is used to solve problems related to disjoint sets, which
+are sets of elements that have no intersection. The Union-Find algorithm allows us to efficiently combine sets
+and determine whether two elements are in the same set.
+
+5. Segement Trees - segement trees are DS that allow us to answwer range queries effectively and at the same time alos provides
+flexibility to update the array.
+Segements are such that each node in the tree contains information about a segment of an array, or any linear data structure.
+Let's first think about the structure of a node in a segment tree.
+
+Every node in a segment tree must store the following information:
+
+    Range/Interval represented by the node
+
+    Information about the segment/interval ( it can be the sum of the range or any other information like minimum/maximum element in that range)
+
+    Pointers to left and right child
+
+
+We will define a structure with all the data variables above.
+
+The algorithm to build the segment tree(for range sum, i.e. each node stores the sum of an interval) is as follows:
+
+    Define the root of the segment tree.
+
+    We have array A and the start and end indices as L=0 and R=n-1.
+
+    Now, let’s define a recursive function build() which takes as parameters the given array, current root, start index L and end index R of the interval.
+
+    For the current root, initialize its interval with L and R values.
+
+    Check if L==R. If so, then it means it is a leaf node, so the sum value of the current node will be A[L], i.e. array element at index L.
+
+    If L is not equal to R, then call the build() function recursively for the left and right children of current.
+    Then, initialize the sum value of the current node as the sum of its left and right children.
+
+6. Iterative DFS - is iterating a tree and traversing without recurssion. WWe use a stack to keep track of the leaf nodes and use a hashset
+to keep track of visited.
+Iterative DFS (Depth First Search) is a way to traverse a graph or tree data structure by exploring as far as possible along each branch
+before backtracking. It uses a stack to keep track of nodes to visit.
+
+Here's how an iterative DFS algorithm works:
+
+    Create a stack and push the starting node onto it.
+    While the stack is not empty, do the following:
+        Pop a node from the top of the stack.
+        If the node has not been visited, mark it as visited and process it (e.g., print it).
+        Push all unvisited neighbors of the node onto the stack.
+    Repeat step 2 until the stack is empty.
+
+7. Trie - Trie, also known as a prefix tree or a digital tree, is a tree-like data structure that is used to store a
+collection of strings. It is particularly useful for applications that require fast string search operations.
+In a trie, each node represents a prefix of one or more strings, and the edges leaving a node represent the characters that can follow that prefix.

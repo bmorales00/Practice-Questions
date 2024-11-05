@@ -1,0 +1,56 @@
+----------------------------------------------- Search Algorithms ----------------------------------------------------------------------------------------
+Linear Search: For a linear search, one must just iterate through an array to find an index/value/items.
+This runs in O(n) linear time.
+
+Binary Search : The array must be sorted in order for this to work properly. For a binary search, a divide and conquer approach is used
+to find a specific item. We divide the array each step and compare the element to the middle element.
+This runs in O(log n) or logarithmic time.
+
+---------------------------------------------- Sorting Algorithms -----------------------------------------------------------------------------------------
+Bubble Sort : This is the simple of sorting algorithm, this works by repeatedly swapping positions of adjacent elements until they are
+in the correct position.
+The time complexity is O(n^2) or quadratic at worst case since we might need to iterate each element in the array for each element.
+
+Merge Sort: This is a sorting algorithm that divide the array by half after each step recursively until there are two arrays with one item per recursion,
+aftwards,  sorts them separately, and then merges them together.
+This run in O(n log n) or linearithmic time.
+
+Quick Sort: This sorting algorithm invloves choosing a pivot, either in the middle or end. Aftwards we start with a boundary value which will be the element that will
+be swapped with a item in the array that is less than the pivot.
+Generally the algo runs in O(n log n) time but worst case it can run in O(n^2)
+
+Counting Sort: This is the simplest of the non comparison sort algo.
+You would use this when values are positive and most value in the range are present. We'd find the max of the array. Create an array using that max,
+then we count the amount of occurence of the elements via th index and place them accodingly based on the interation of the new array.
+Time Complexity: O(n)
+
+Insertion Sort: This algo works by swapping adjacent elements after growing the array after each step.
+You start with the second element then you compare it woth the first element, then compare the third with the second and then the second with the
+first assuming the third element initially smaller than both the second and first element.
+The time complexity of the Insertion Sort algorithm is O(n^2)
+------------------------------------------------ Kadanes Algorithm -------------------------------------------------------------------------------------------------------
+Kadane's Algorithm: it is a 1D DP algorithm that finds the maximum subarray sum of an array in linear time. The idea is to keep two variables,
+one that will update the current max with itself plus the item in the array or the item itself, and another variable that will update the max with
+the max found so far and the current max. The current max will either start a new subarray or continue.
+O(n)
+
+------------------------------------------------- Prefix Algorithm ------------------------------------------------------------------------------------------------
+Prefix Sum:Prefix sum, also known as cumulative sum, refers to the computation of an array or sequence where each element represents the sum of
+all the preceding elements, including itself. The prefix sum operation is commonly used in various algorithms and data structures to optimize certain computations.
+To calculate the prefix sum of an array, you start with the first element and iteratively compute the sum of all the previous
+elements up to the current position. The result is stored in a separate array or overwritten in the same array, depending on the implementation.
+
+Here's an example to illustrate the concept:
+Given an array [1, 2, 3, 4, 5], the prefix sum would be [1, 3, 6, 10, 15].
+
+
+--------------------------------------------------- TWO POINTERS-----------------------------------------------------------------------------------------------------
+Two pointers are generally solved with two pointers as in the name. there are different variations of this but for the most part
+one pointer would start in the beginning of a collection and another pointer would be at the end of the collection.
+This would prompt the would algorithm to essentially run in O(n) or linear time.
+
+------------------------------------------------------ SLIDING WINDOW --------------------------------------------------------------------------------------------------
+Sliding window algorithms are used to efficiently solve problems involving arrays,
+strings, or sequences where we need to maintain a window of contiguous elements while sliding it over the sequence.
+This generally would run in O(n) complexity.
+
