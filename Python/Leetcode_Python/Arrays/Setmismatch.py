@@ -14,7 +14,7 @@ def findErrorNums(nums: List[int]) -> List[int]:
         if nums2[num] == 2:
             res.append(num)
 
-    for num in range(1,len(nums2)):
+    for num in range(1, len(nums2)):
         if nums2[num] == 0:
             res.append(num)
             return res
