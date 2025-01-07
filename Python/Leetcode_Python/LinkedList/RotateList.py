@@ -1,3 +1,4 @@
+# Time Complexity: O(n) || Space Complexity:O(1)
 from typing import Optional
 from SinglyLL import ListNode
 
@@ -36,5 +37,6 @@ def rotateRight(head:Optional[ListNode], k:int)-> Optional[ListNode]:
         curr = curr.next
     curr.next = head
     head = p2
+
     return head
         
