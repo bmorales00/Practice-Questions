@@ -34,7 +34,3 @@ def asteroidCollision(asteroids: List[int]) -> List[int]:
             stack.append(asteroid)
 
     return stack
-
-
-x = asteroidCollision([1, 2, 3])
-
